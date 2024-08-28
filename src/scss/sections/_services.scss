@@ -1,0 +1,56 @@
+.Services {
+  --h2margin: 0 0 1rem 0;
+  --pl: 1.5rem;
+  --pr: 1.5rem;
+  --pt: 5rem;
+  --pb: 5rem;
+  line-height: 1;
+  h2 {
+    --font-size: 36px;
+    text-align: center;
+    margin: var(--h2margin);
+  }
+  p {
+    text-align: center;
+    font-size: 19px;
+  }
+  @media (orientation: landscape) {
+    --pl: 0;
+    --pr: 0;
+    --pt: #{get-vw(220px)};
+    --pb: #{get-vw(220px)};
+    h2 {
+      font-size: get-vw(90px);
+      margin-bottom: get-vw(90px);
+    }
+    p {
+      text-align-last: left;
+      font-size: get-vw(65px);
+      padding-left: #{get-vw(406.9px)};
+      line-height: 1;
+      br {
+        display: block;
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    --pl: #{get-vw(400px)};
+    --pr: #{get-vw(400px)};
+    h2 {
+      font-size: get-vw(90px);
+    }
+    p {
+      text-align-last: left;
+      font-size: get-vw(65px);
+      list-style: get-vw(69px);
+    }
+  }
+  @media (min-width: 1024px) {
+    --pl: 0;
+    --pr: 0;
+  }
+  @media (min-width: 1600px) {
+  }
+  @media (min-width: 1921px) {
+  }
+}

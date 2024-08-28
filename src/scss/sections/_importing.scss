@@ -1,0 +1,59 @@
+.Importing {
+  --h2margin: 0 0 1rem 0;
+  --pl: 2rem;
+  --pr: 2rem;
+  --pt: 5rem;
+  --pb: 5rem;
+  @media (orientation: portrait) {
+    h2 {
+      margin-bottom: 1em;
+      font-size: 1.5em;
+    }
+    span {
+      font-size: 1.2em;
+    }
+    .col-right {
+      margin-top: 1em;
+      font-size: 1.05em;
+    }
+  }
+  @media (orientation: landscape) {
+    --h2margin: 0 0 1rem 0;
+    --pl: #{get-vw(209px)};
+    --pr: #{get-vw(187px)};
+    --pt: #{get-vw(229.5px)};
+    --pb: #{get-vw(232.3px)};
+    display: grid;
+    grid-template-columns: 1fr auto;
+    h2 {
+      font-size: get-vw(50px);
+      margin-bottom: get-vw(50px);
+    }
+    p {
+      font-size: get-vw(30px);
+    }
+    span {
+      font-size: get-vw(30px);
+    }
+    .col-right {
+      width: auto;
+      display: flex;
+      padding-top: get-vw(42.8px);
+      &__text p {
+        // margin-left: auto;
+        font-size: get-vw(35px) !important;
+        font-weight: 700;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+  }
+  @media (min-width: 768px) {
+  }
+  @media (min-width: 1024px) {
+  }
+  @media (min-width: 1600px) {
+  }
+  @media (min-width: 1921px) {
+  }
+}

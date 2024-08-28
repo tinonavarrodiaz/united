@@ -1,0 +1,68 @@
+.Header {
+  --h: 130px;
+  --pr: 2em;
+  --pl: 2em;
+  --fz: 18px;
+  --mw: 150px;
+  --lh: 2.5em;
+  --lw: 80%;
+
+  height: var(--h);
+  padding-left: var(--pl);
+  padding-right: var(--pr);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: var(--fz);
+
+  & img {
+    width: var(--lw);
+    max-width: var(--mw);
+  }
+  @media (min-width: 1024px) {
+    --pl: #{get-vw(130px)};
+    --pr: #{get-vw(214px)};
+    --h: #{get-vw(230px)};
+    --fz: #{get-vw(24px)};
+    img {
+      --lw: #{get-vw(210px)};
+      max-width: unset;
+    }
+  }
+  .Menu {
+    position: absolute;
+    top: var(--h);
+    left: 0;
+    width: 100%;
+    background: var(--body-color-secundary);
+    line-height: var(--lh);
+    height: auto;
+    max-height: 0;
+    transition: max-height 0.5s;
+    overflow: hidden;
+    line-height: var(--lh);
+    z-index: 50;
+    li {
+      padding-left: 1em;
+    }
+    &.is-active {
+      max-height: calc(var(--lh) * 4);
+    }
+    a {
+      display: inline;
+      // padding-left: 1em;
+    }
+    @media (min-width: 1024px) {
+      --lh: 1.3;
+      background: transparent;
+      position: static;
+      max-height: unset;
+      width: auto;
+
+      a,
+      li {
+        padding: 0;
+      }
+    }
+  }
+}

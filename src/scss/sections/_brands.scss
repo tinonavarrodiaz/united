@@ -1,0 +1,43 @@
+.Brands {
+  --h2margin: 0 0 1rem 0;
+  --pl: 2rem;
+  --pr: 2rem;
+  --pt: 5rem;
+  --pb: 5rem;
+  h2 {
+    font-size: 1.6em;
+    text-align: center;
+  }
+  .Brands__gallery {
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1em;
+  }
+  @media (orientation: portrait) {
+  }
+  @media (orientation: landscape) {
+  }
+  @media (max-width: 767px) {
+  }
+  @media (min-width: 768px) and (orientation: landscape) {
+    --pl: #{get-vw(321.5px)};
+    --pt: #{get-vw(226.2px)};
+    --pr: #{get-vw(316.4px)};
+    --pb: #{get-vw(305px)};
+    h2 {
+      font-size: get-vw(90px);
+      margin-bottom: get-vw(203.4px);
+    }
+    .Brands__gallery {
+      row-gap: 3.125dvw;
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  @media (min-width: 1024px) {
+  }
+  @media (min-width: 1600px) {
+  }
+  @media (min-width: 1921px) {
+  }
+}

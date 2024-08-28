@@ -1,0 +1,19 @@
+section {
+  padding-top: var(--pt);
+  padding-right: var(--pr);
+  padding-bottom: var(--pb);
+  padding-left: var(--pl);
+  margin-top: var(--mt);
+  margin-right: var(--mr);
+  margin-bottom: var(--mb);
+  margin-left: var(--ml);
+  * {
+    font-size: var(--font-size);
+  }
+}
+br {
+  display: none;
+  @media (min-width: 1024px) {
+    display: block;
+  }
+}

@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'hamburgers/dist/hamburgers.min.css';
+@import 'aos/dist/aos.css';
+
+@import './config/functions.scss';
+@import './config/variables.scss';
+@import './base/base.scss';
+
+@import './components/hamburger.scss';
+@import './components/header.scss';
+@import './components/slider.scss';
+
+@import './sections/section.scss';
+@import './sections/what.scss';
+@import './sections/services.scss';
+@import './sections/distribution.scss';
+@import './sections/importing.scss';
+@import './sections/brands.scss';
+@import './sections/distillery.scss';
+@import './sections/contact.scss';
+
+@import './hacks/hacks.scss';
+
+@media (orientation: portrait) {
+}
+@media (orientation: landscape) {
+}
+@media (max-width: 767px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 1024px) {
+}
+@media (min-width: 1600px) {
+}
+@media (min-width: 1921px) {
+}

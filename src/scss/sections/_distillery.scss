@@ -1,0 +1,55 @@
+.Distillery {
+  --h2margin: 0 0 1rem 0;
+  --pl: 2rem;
+  --pr: 2rem;
+  --pt: 5rem;
+  --pb: 5rem;
+  max-width: 100dvw;
+  overflow-x: hidden;
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: 2rem;
+  }
+  p {
+    margin-bottom: 2rem;
+  }
+  @media (orientation: portrait) and (max-width: 767px) {
+    .Distillery__img {
+      width: 100%;
+      margin: 2em auto 0;
+      img {
+        margin: 0 auto;
+      }
+    }
+  }
+  @media (orientation: landscape) {
+    padding-left: get-vw(143.2px);
+    padding-right: get-vw(49px);
+    padding-top: get-vw(265.4px);
+    padding-bottom: get-vw(225px);
+    display: grid;
+    grid-template-columns: 1fr get-vw(860px);
+    h2 {
+      font-size: get-vw(90px);
+      margin-bottom: get-vw(110.1px);
+    }
+    p {
+      font-size: get-vw(40px);
+      line-height: get-vw(48px);
+    }
+    .Distillery__img {
+      margin-top: get-vw(57.5px);
+    }
+  }
+  @media (max-width: 800px) and (orientation: landscape) {
+    column-gap: 3em;
+  }
+  @media (min-width: 768px) {
+  }
+  @media (min-width: 1024px) {
+  }
+  @media (min-width: 1600px) {
+  }
+  @media (min-width: 1921px) {
+  }
+}
